@@ -8,5 +8,5 @@ class User extends Model
      * Protection against mass Assignment 
      */
 	
-    protected $fillable = ['username', 'email'];
+    protected $fillable = ['name', 'email'];
 }

@@ -3,14 +3,14 @@
 use Illuminate\Database\Capsule\Manager as Capsule;
 
 $capsule = new Capsule();
-
+EnvParser::init();
 $capsule->addConnection([
-    'driver' => 'mysql',
-    'host' => 'localhost',
-    'username' => 'yourusername',
-    'password' => 'yourpassword',
-    'database' => 'mvctest',
-    'charset' => 'utf8',
+    'driver' => EnvParser::$driver,
+    'host' => EnvParser::$host,
+    'username' => EnvParser::$username,
+    'password' => EnvParser::$password,
+    'database' => EnvParser::$database,
+    'charset' => EnvParser::$charset,
     'collation' => 'utf8_unicode_ci',
     'prefix' => ''
 ]);
