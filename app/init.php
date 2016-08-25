@@ -8,4 +8,4 @@ require_once 'core/Controller.php';
  * Time Zone Setting 
  */
 
-date_default_timezone_set('America/La_Paz');
+date_default_timezone_set('Europe/London');
